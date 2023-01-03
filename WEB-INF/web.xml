@@ -1,0 +1,37 @@
+<web-app>
+
+   <!-- General description of your Web application -->
+   <display-name>
+      CNT 4714 Spring 2022 Servlet/JSP Home Page
+   </display-name>
+
+   <description>
+      This is the Web application in which we 
+      demonstrate our JSP and Servlet examples.
+   </description>
+   
+   <!-- Servlet definitions and mappings  -->
+
+      <servlet>
+         <servlet-name>rootUserServlet</servlet-name>
+         <description> Root User Servlet </description>
+         <servlet-class>RootUserAppServlet</servlet-class>
+      </servlet>
+
+       <servlet-mapping>
+          <servlet-name>rootUserServlet</servlet-name>
+          <url-pattern>/RootUserAppServlet</url-pattern>
+       </servlet-mapping>
+       
+       <servlet>
+         <servlet-name>clientUserServlet</servlet-name>
+         <description> Client User Servlet </description>
+         <servlet-class>ClientUserAppServlet</servlet-class>
+      </servlet>
+
+       <servlet-mapping>
+          <servlet-name>clientUserServlet</servlet-name>
+          <url-pattern>/ClientUserAppServlet</url-pattern>
+       </servlet-mapping>
+</web-app>
+
